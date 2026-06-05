@@ -140,48 +140,21 @@
     animation-delay: 0.8s;
   }
 
-  .form-row {
-    display: flex;
-    gap: 0;
-    max-width: 480px;
-  }
-
-  input[type="email"] {
-    flex: 1;
-    background: rgba(244, 242, 238, 0.06);
-    border: 1px solid rgba(176, 141, 87, 0.35);
-    border-right: none;
-    color: var(--paper);
-    font-family: 'Crimson Pro', Georgia, serif;
-    font-size: 16px;
-    font-weight: 300;
-    padding: 16px 20px;
-    outline: none;
-    transition: border-color 0.2s ease, background 0.2s ease;
-    -webkit-appearance: none;
-  }
-
-  input[type="email"]::placeholder { color: var(--steel); }
-
-  input[type="email"]:focus {
-    border-color: var(--bronze);
-    background: rgba(244, 242, 238, 0.09);
-  }
-
-  button[type="submit"] {
+  .join-btn {
+    display: inline-block;
     background: var(--bronze);
     color: var(--ink);
     border: 1px solid var(--bronze);
     font-family: 'Bebas Neue', sans-serif;
     font-size: 14px;
     letter-spacing: 0.2em;
-    padding: 16px 28px;
+    padding: 16px 36px;
     cursor: pointer;
+    text-decoration: none;
     transition: background 0.2s ease, color 0.2s ease;
-    white-space: nowrap;
   }
 
-  button[type="submit"]:hover {
+  .join-btn:hover {
     background: transparent;
     color: var(--bronze);
   }
@@ -305,10 +278,7 @@
     </p>
 
     <div class="form-wrapper">
-      <form class="form-row" onsubmit="window.location.href='https://curtis-pollard.kit.com/jointhelist'; return false;">
-        <input type="email" placeholder="Your email address" required autocomplete="email">
-        <button type="submit">JOIN THE LIST</button>
-      </form>
+      <a href="https://curtis-pollard.kit.com/jointhelist" class="join-btn">JOIN THE LIST</a>
       <p class="form-note">No spam. No hype. Unsubscribe any time.</p>
     </div>
 
